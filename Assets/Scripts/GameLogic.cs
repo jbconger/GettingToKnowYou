@@ -69,10 +69,11 @@ public class GameLogic : MonoBehaviour
 
 	public void AddPlayer()
 	{
+		playerNames.Add(playerNameInput.text);
+
 		if (counter < playerCount)
 		{
 			counter++;
-			playerNames.Add(playerNameInput.text);
 			UpdateInstructionText("Enter Player " + (counter) + "'s Name");
 
 			playerNameInput.text = "Player Name...";
@@ -148,5 +149,10 @@ public class GameLogic : MonoBehaviour
 	public void ResetGame()
 	{
 		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+	}
+
+	public void Quit()
+	{
+		Application.Quit();
 	}
 }
