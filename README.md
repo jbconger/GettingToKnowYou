@@ -1,4 +1,4 @@
-#EAE 6330 Game Engineering III
+# EAE 6330 Game Engineering III
 
 Project 1: "Getting to Know You" interactive experience
 
